@@ -1,0 +1,192 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 4em;
+    background-color: #ABA997;
+    color: #fff;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select {
+    max-width: 280px;
+}
+
+.subfooter {
+    position: fixed;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+    font-size: 12pt;
+    padding-top: 15px;
+    background-color: #001B38;
+    color: white;
+    height: 50px;
+}
+
+.image-center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.lead-image {
+    display: inline;
+    margin-left: auto;
+    margin-right: 7em;
+    border-radius: 100%;
+    border: 3px solid #fff;
+    text-align: center;
+}
+
+/* Set all h2 tags in the body as Cedarville Cursive font */
+body h2 {
+    font-family: 'Cedarville Cursive', cursive;
+    font-size: 50px;
+    color: #5E1F26;
+}
+
+/* Set all div tags in the body at Comfortaa font */
+body div {
+    font-family: 'Comfortaa', cursive;
+    font-size: 18px;
+}
+
+/* Center images */
+img.center {
+    display: block;
+    margin: 0 auto;
+}
+
+/* Accordion style */
+.accordion .ui-accordion-content {
+    width: 100%;
+    color: #000;
+    line-height: 16pt;
+}
+
+    /*.accordion .ui-accordion-content > * {
+
+}*/
+
+    .accordion .ui-accordion-content a {
+        color: #777;
+    }
+
+.accordion .ui-accordion-header {
+    background-color: #5E3741; /* Old browsers */
+    background-image: -moz-linear-gradient(top, #5E3741 0%, #5E3741 100%); /* FF3.6+ */
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#5E3741), color-stop(100%,#5E3741)); /* Chrome,Safari4+ */
+    background-image: -webkit-linear-gradient(top, #5E3741 0%,#5E3741 100%); /* Chrome10+,Safari5.1+ */
+    background-image: -o-linear-gradient(top, #5E3741 0%,#5E3741 100%); /* Opera 11.10+ */
+    background-image: -ms-linear-gradient(top, #5E3741 0%,#5E3741 100%); /* IE10+ */
+    background-image: linear-gradient(to bottom, #5E3741 0%,#5E3741 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5E3741', endColorstr='#5E3741',GradientType=0 ); /* IE6-9 */
+    margin: 0px;
+    color: #fff;
+}
+
+    .accordion .ui-accordion-header a {
+        color: #fff;
+        line-height: 42px;
+        display: block;
+        font-size: 12pt;
+        width: 100%;
+        text-indent: 10px;
+    }
+
+.container a {
+    color: #001B38;
+}
+
+.subfooter a {
+    color: #ABA997;
+}
+
+.word-emphasis {
+    font-style: italic;
+    font-weight: bold;
+    color: #001B38;
+}
+
+.loveNotes {
+    font-style: italic;
+}
+
+    .loveNotes p {
+        border-top: solid #5E1F26 1px;
+        padding: 1em;
+    }
+
+.carousel-inner .item img {
+    /*border-radius: 180px;*/
+    border: solid black 5px;
+}
+
+.carousel-control span {
+    color: #fff;
+}
+
+.message {
+    height: 200px;
+    width: 250px;
+}
+
+textarea {
+    width: 280px;
+    height: 350px;
+}
+
+input {
+    width: 400px;
+}
+
+p {
+    font-size: 1.5em;
+}
+
+    p span {
+        color: #5E1F26;
+    }
+
+footer p {
+    font-size: 1em;
+}
+
+#services-img-container {
+    text-align: center;
+}
+
+#services-img {
+    border-radius: 10px;
+}
+
+#pricing h1, #pricing h3 {
+    text-shadow: 2px 2px #001B38;
+}
+
+#pricing p {
+    color: #001B38;
+}
+
+#gallery-ul li {
+    list-style-type: none;
+}
+
+    #gallery-ul li img {
+        border: solid #fff 2px;
+        border-radius: 2em;
+        height: 8em;
+        width: 8em;
+    }
+
+#landing-subheader {
+    font-size: 2em;
+}

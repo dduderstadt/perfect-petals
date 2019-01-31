@@ -1,0 +1,112 @@
+﻿@using PerfectPetalsSite_v1.Utilities; <!--added for IsActive-->
+@using PerfectPetalsSite_v1.App_Start;
+
+<!--colors:
+    Garnett (red): #5E1F26
+    Plum (purple): #5E3741
+    Smoke (gray): #ABA997
+    Sapphire (blue): #001B38-->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--SEO Tags-->
+    <meta name="Kansas City Event Florist" />
+    <meta keywords="kansas, kansas city, event, events, florist, weddings, flowers, bride, groom, tisha, garcia, tisha garcia,
+          perfect petals wedding and events florist, perfect petals, perfect petals kansas city, perfect petals tisha,
+          louthain, 3 louthains, perfect petals tish, tish, tisha events, tisha florist, tisha garcia florist" />.
+
+    <title>@ViewBag.Title - Perfect Petals Weddings &amp; Events</title>
+    <link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
+
+    <!--added for Google Fonts-->
+    <link href='https://fonts.googleapis.com/css?family=Cedarville+Cursive|Comfortaa' rel='stylesheet' type='text/css'>
+
+    <!--added for Font Awesome-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+
+    <!--added for Accordion-->
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+
+    <!--added for Datepicker-->
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
+
+    <!--added for Gallery-->
+    <script src="~/Scripts/jquery.bsPhotoGallery.js"></script>
+
+    <script src="~/Scripts/modernizr-2.6.2.js"></script>
+    @Scripts.Render("~/bundles/modernizr")
+    @Styles.Render("~/Content/css")
+</head>
+<body style="background-color: #ABA997;">
+    <div class="navbar navbar-inverse navbar-fixed-top" style="background-color: #001B38;">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                @Html.ActionLink("Perfect Petals Wedding & Events", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+            </div>
+            <div class="navbar-collapse collapse text-center">
+                <ul class="nav navbar-nav">
+                    <li class="@Html.IsActive("Home", "Gallery")">
+                        <a href="@Url.Action("Gallery", "Home")" style="background-color: #001B38;">Gallery</a>
+                    </li>
+                    <li class="@Html.IsActive("Home", "ServicesPricing")">
+                        <a href="@Url.Action("ServicesPricing", "Home")" style="background-color: #001B38;">Services &amp; Pricing</a>
+                    </li>
+                    <li class="@Html.IsActive("Home", "Testimonials")">
+                        <a href="@Url.Action("Testimonials", "Home")" style="background-color: #001B38;">Love Notes</a>
+                    </li>
+                    <li class="@Html.IsActive("Home", "Connect")">
+                        <a href="@Url.Action("Connect", "Home")" style="background-color: #001B38;">Connect</a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/PerfectPetalsWeddingsAndEventFlorist/" target="_blank"><span class="fa fa-facebook-f" style="font-size: 16pt;"></span></a>
+                    </li>
+                    <li>
+                        <a href="https://www.pinterest.com/tisha39" target="_blank"><span class="fa fa-pinterest-p" style="font-size: 16pt;"></span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+
+        <footer class="subfooter">
+            <p>&copy; @DateTime.Now.Year - Perfect Petals Wedding &amp; Events Florist : Built by <a href="http://www.dudercode.com" target="_blank">dudercode.com</a></p>
+        </footer>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+
+    <!--added for Accordion-->
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script>
+        $(function () {
+            $(".accordion").accordion({ header: "h3", collapsible: true, active: false });
+        });
+    </script>
+
+    <!--added for Datepicker-->
+    <script>
+        $(function () {
+            $("#datepicker").datepicker();
+        });
+    </script>
+</body>
+</html>
